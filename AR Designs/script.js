@@ -83,11 +83,15 @@ if (siteNav && navToggle) {
     });
   });
 
-  siteNav.addEventListener("pointerleave", () => {
-    if (window.innerWidth <= navBreakpoint) {
-      closeMenu();
-    }
-  });
+  const supportsHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+
+  if (supportsHover) {
+    siteNav.addEventListener("pointerleave", () => {
+      if (window.innerWidth <= navBreakpoint) {
+        closeMenu();
+      }
+    });
+  }
 
   window.addEventListener("resize", () => {
     if (window.innerWidth > navBreakpoint) {
