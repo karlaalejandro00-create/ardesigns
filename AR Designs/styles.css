@@ -680,16 +680,16 @@ footer {
 @media (max-width: 900px) {
 
   #container {
-    margin-top: 0;
-    padding-top: 16px;
-    z-index: 0;
+    margin-top: -60px;
+    padding-top: 0;
+    z-index: 80;
   }
 
   .site-nav {
     padding: 10px 14px;
     min-height: 56px;
     z-index: 220;
-    margin-top: 0;
+    margin-top: -10px;
   }
 
   .nav-toggle {
@@ -750,6 +750,10 @@ footer {
 
 @media (max-width: 600px) {
 
+  header {
+    padding: 16px 14px 42px;
+  }
+
   h1 {
     font-size: 48px;
   }
@@ -762,6 +766,14 @@ footer {
   #container p {
     font-size: 22px;
     padding: 15px 30px;
+  }
+
+  #container {
+    margin-top: -50px;
+  }
+
+  .site-nav {
+    margin-top: -8px;
   }
 
   .portfolio-grid {
