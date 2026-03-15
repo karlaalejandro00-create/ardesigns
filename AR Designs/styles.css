@@ -679,10 +679,17 @@ footer {
 
 @media (max-width: 900px) {
 
+  #container {
+    margin-top: 0;
+    padding-top: 16px;
+    z-index: 0;
+  }
+
   .site-nav {
     padding: 10px 14px;
     min-height: 56px;
     z-index: 220;
+    margin-top: 0;
   }
 
   .nav-toggle {
