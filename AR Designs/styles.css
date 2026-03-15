@@ -682,6 +682,7 @@ footer {
   .site-nav {
     padding: 10px 14px;
     min-height: 56px;
+    z-index: 220;
   }
 
   .nav-toggle {
@@ -718,7 +719,7 @@ footer {
     border-radius: 16px;
     padding: 8px;
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
-    z-index: 29;
+    z-index: 230;
   }
 
   .site-nav.is-open .nav-links {
