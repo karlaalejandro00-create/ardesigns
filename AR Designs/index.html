@@ -39,39 +39,55 @@
       <p>Take a look around!</p>
     </section>
 
-    <div class="home-frame">
+    <section class="home-frame hero-carousel" aria-label="Homepage hero">
       <div class="home-carousel" aria-label="Homepage image carousel">
         <img src="images/hero3.webp" alt="Stylized portrait artwork for AR Designs homepage" class="carousel-image is-active">
         <img src="images/heros.webp" alt="Creative portrait art from AR Designs" class="carousel-image">
         <img src="images/herop.webp" alt="Portrait artwork variation from AR Designs" class="carousel-image">
       </div>
 
-      <div class="carousel-controls">
-        <button type="button" class="carousel-arrow" data-direction="prev" aria-label="Previous image">Prev</button>
-        <div class="carousel-menu" aria-label="Carousel menu">
-          <button type="button" class="carousel-dot is-active" data-slide="0" aria-label="Show image 1"></button>
-          <button type="button" class="carousel-dot" data-slide="1" aria-label="Show image 2"></button>
-          <button type="button" class="carousel-dot" data-slide="2" aria-label="Show image 3"></button>
+      <div class="hero-overlay">
+        <h2 class="hero-title">AR DESIGNS</h2>
+        <p class="hero-subtitle">Explore selected work across branding, editorial, fine arts, and photography.</p>
+        <div class="hero-actions">
+          <a class="hero-cta" href="portfolio.html">View Portfolio</a>
+          <a class="hero-cta hero-cta--secondary" href="contact.html">Contact Me</a>
         </div>
-        <button type="button" class="carousel-arrow" data-direction="next" aria-label="Next image">Next</button>
       </div>
-    </div>
 
-    <section class="padded-media photo-table featured-media" aria-label="Featured artwork">
-      <figure class="padded-media-item artwork-card" tabindex="0">
-        <img src="images/11.webp" alt="Featured artwork 11">
-        <figcaption class="artwork-overlay">
-          <span class="artwork-title">Artwork 11</span>
-          <span class="artwork-medium">Medium: TBD</span>
-        </figcaption>
-      </figure>
+      <div class="carousel-controls hero-controls" aria-label="Carousel controls">
+        <div class="carousel-menu" aria-label="Carousel slides">
+          <button type="button" class="carousel-dot is-active" data-slide="0" aria-label="Show slide 1"></button>
+          <button type="button" class="carousel-dot" data-slide="1" aria-label="Show slide 2"></button>
+          <button type="button" class="carousel-dot" data-slide="2" aria-label="Show slide 3"></button>
+        </div>
+        <div class="hero-controls-right">
+          <button type="button" class="carousel-pause" aria-pressed="false" aria-label="Pause carousel">Pause</button>
+          <button type="button" class="carousel-arrow" data-direction="prev" aria-label="Previous slide">‹</button>
+          <button type="button" class="carousel-arrow" data-direction="next" aria-label="Next slide">›</button>
+        </div>
+      </div>
     </section>
-
     <section class="padded-media featured-media featured-video" aria-label="Featured video">
       <p class="featured-video-label">Watch me work!</p>
       <div class="featured-video-wrap">
         <video src="images/timel.mov" autoplay loop muted playsinline preload="metadata"></video>
       </div>
+    </section>
+
+    <section class="home-categories" aria-label="Explore categories">
+      <a class="home-category-card" href="editorial.html" aria-label="View Editorial Spreads">
+        <img src="images/starbucksedit.webp" alt="Editorial spreads preview">
+        <span class="home-category-pill">View Editorial</span>
+      </a>
+      <a class="home-category-card" href="fine-arts.html" aria-label="View Fine Arts">
+        <img src="images/1.webp" alt="Fine arts preview">
+        <span class="home-category-pill">View Fine Arts</span>
+      </a>
+      <a class="home-category-card" href="photography.html" aria-label="View Photography">
+        <img src="images/sky.webp" alt="Photography preview">
+        <span class="home-category-pill">View Photography</span>
+      </a>
     </section>
   </main>
 
