@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | AR Designs</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.typekit.net/etv7hms.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo-link" aria-label="AR Designs home">
+      <img src="images/logo.png" alt="AR Designs logo" class="site-logo">
+    </a>
+    <h1>AR Designs</h1>
+  </header>
+
+  <div id="container">
+    <p>Design without soul is like food with no salt.</p>
+  </div>
+
+  <nav class="site-nav">
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div id="primary-menu" class="nav-links">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact Me</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="portfolio-intro home-intro">
+      <h2>Welcome</h2>
+      <p>Take a look around!</p>
+    </section>
+
+    <div class="home-frame">
+      <div class="home-carousel" aria-label="Homepage image carousel">
+        <img src="images/hero3.webp" alt="Stylized portrait artwork for AR Designs homepage" class="carousel-image is-active">
+        <img src="images/heros.webp" alt="Creative portrait art from AR Designs" class="carousel-image">
+        <img src="images/herop.webp" alt="Portrait artwork variation from AR Designs" class="carousel-image">
+      </div>
+
+      <div class="carousel-controls">
+        <button type="button" class="carousel-arrow" data-direction="prev" aria-label="Previous image">Prev</button>
+        <div class="carousel-menu" aria-label="Carousel menu">
+          <button type="button" class="carousel-dot is-active" data-slide="0" aria-label="Show image 1"></button>
+          <button type="button" class="carousel-dot" data-slide="1" aria-label="Show image 2"></button>
+          <button type="button" class="carousel-dot" data-slide="2" aria-label="Show image 3"></button>
+        </div>
+        <button type="button" class="carousel-arrow" data-direction="next" aria-label="Next image">Next</button>
+      </div>
+    </div>
+
+    <section class="padded-media photo-table featured-media" aria-label="Featured artwork">
+      <figure class="padded-media-item artwork-card" tabindex="0">
+        <img src="images/11.webp" alt="Featured artwork 11">
+        <figcaption class="artwork-overlay">
+          <span class="artwork-title">Artwork 11</span>
+          <span class="artwork-medium">Medium: TBD</span>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="padded-media featured-media featured-video" aria-label="Featured video">
+      <p class="featured-video-label">Watch me work!</p>
+      <div class="featured-video-wrap">
+        <video src="images/timel.mov" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+    </section>
+  </main>
+
+  <div class="corner-gif-wrap" aria-hidden="true">
+    <img src="images/luna.gif" alt="" class="corner-gif">
+  </div>
+
+  <footer>
+    &copy; 2026 AR Designs
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
