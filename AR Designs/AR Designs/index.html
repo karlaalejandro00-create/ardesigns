@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | AR Designs</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.typekit.net/etv7hms.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo-link" aria-label="AR Designs home">
+      <img src="images/logo.png" alt="AR Designs logo" class="site-logo">
+    </a>
+    <h1>AR Designs</h1>
+  </header>
+
+  <div id="container">
+    <p><span class="quote-line1">Design without soul is like food</span><span class="quote-line2">with no salt.</span></p>
+  </div>
+
+  <nav class="site-nav">
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div id="primary-menu" class="nav-links">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact Me</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="portfolio-intro home-intro">
+      <h2>Welcome</h2>
+      <p>Take a look around!</p>
+    </section>
+
+    <section class="home-frame hero-carousel" aria-label="Homepage hero">
+      <div class="home-carousel" aria-label="Homepage image carousel">
+        <img src="images/hero3.webp" alt="Stylized portrait artwork for AR Designs homepage" class="carousel-image is-active">
+        <img src="images/heros.webp" alt="Creative portrait art from AR Designs" class="carousel-image">
+        <img src="images/herop.webp" alt="Portrait artwork variation from AR Designs" class="carousel-image">
+      </div>
+
+      <div class="hero-overlay">
+        <h2 class="hero-title">AR DESIGNS</h2>
+        <p class="hero-subtitle">Explore selected work across branding, editorial, fine arts, and photography.</p>
+        <div class="hero-actions">
+          <a class="hero-cta" href="portfolio.html">View Portfolio</a>
+          <a class="hero-cta hero-cta--secondary" href="contact.html">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="carousel-controls hero-controls" aria-label="Carousel controls">
+        <div class="carousel-menu" aria-label="Carousel slides">
+          <button type="button" class="carousel-dot is-active" data-slide="0" aria-label="Show slide 1"></button>
+          <button type="button" class="carousel-dot" data-slide="1" aria-label="Show slide 2"></button>
+          <button type="button" class="carousel-dot" data-slide="2" aria-label="Show slide 3"></button>
+        </div>
+        <div class="hero-controls-right">
+          <button type="button" class="carousel-pause" aria-pressed="false" aria-label="Pause carousel">Pause</button>
+          <button type="button" class="carousel-arrow" data-direction="prev" aria-label="Previous slide">‹</button>
+          <button type="button" class="carousel-arrow" data-direction="next" aria-label="Next slide">›</button>
+        </div>
+      </div>
+    </section>
+    <section class="padded-media featured-media featured-video" aria-label="Featured video">
+      <p class="featured-video-label">Watch me work!</p>
+      <div class="featured-video-stage">
+        <div class="featured-video-side featured-video-side--left" aria-hidden="true"></div>
+        <div class="featured-video-wrap">
+          <video src="images/timel.mov" autoplay loop muted playsinline preload="metadata"></video>
+        </div>
+        <div class="featured-video-side featured-video-side--right" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="home-categories" aria-label="Explore categories">
+      <a class="home-category-card" href="editorial.html" aria-label="View Editorial Spreads">
+        <img src="images/starbucksedit.webp" alt="Editorial spreads preview">
+        <span class="home-category-pill">View Editorial</span>
+      </a>
+      <a class="home-category-card" href="fine-arts.html" aria-label="View Fine Arts">
+        <img src="images/1.webp" alt="Fine arts preview">
+        <span class="home-category-pill">View Fine Arts</span>
+      </a>
+      <a class="home-category-card" href="photography.html" aria-label="View Photography">
+        <img src="images/sky.webp" alt="Photography preview">
+        <span class="home-category-pill">View Photography</span>
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2026 AR Designs
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
