@@ -124,3 +124,20 @@ if (siteNav && navToggle) {
     }
   });
 }
+
+const twitchEmbedRoot = document.querySelector("#twitch-embed");
+
+if (twitchEmbedRoot) {
+  const channel = twitchEmbedRoot.dataset.twitchChannel || "ardesigns_";
+  const host = window.location.hostname || "localhost";
+  const parent = encodeURIComponent(host);
+
+  const iframe = document.createElement("iframe");
+  iframe.src = `https://player.twitch.tv/?channel=${encodeURIComponent(channel)}&parent=${parent}&autoplay=false&muted=true`;
+  iframe.allowFullscreen = true;
+  iframe.loading = "lazy";
+  iframe.referrerPolicy = "origin";
+  iframe.title = `Twitch live stream: ${channel}`;
+
+  twitchEmbedRoot.appendChild(iframe);
+}
