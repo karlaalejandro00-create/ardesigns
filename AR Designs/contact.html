@@ -16,7 +16,7 @@
   </header>
 
   <div id="container">
-    <p>Design without soul is like food with no salt.</p>
+    <p><span class="quote-line1">Design without soul is like food</span><span class="quote-line2">with no&nbsp;salt.</span></p>
   </div>
 
   <nav class="site-nav">
@@ -34,25 +34,36 @@
   </nav>
 
   <main>
-    <form>
+    <form
+      id="contact-form"
+      action="https://formsubmit.co/karlalejes0@outlook.com"
+      method="POST"
+    >
+      <input type="hidden" name="_subject" value="New AR Designs contact message">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="_honey" class="contact-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
       <table cellpadding="15px" align="center" width="700px" class="contact-table">
         <tr>
           <th colspan="2"><h2 class="contact-title">Contact</h2></th>
         </tr>
         <tr>
-          <td class="contact-label">Name</td>
-          <td><input type="text" placeholder="Your Name"></td>
+          <td class="contact-label-cell"><label class="contact-label" for="contact-name">Name</label></td>
+          <td><input id="contact-name" type="text" name="name" placeholder="Your Name" autocomplete="name" required></td>
         </tr>
         <tr>
-          <td class="contact-label">Email</td>
-          <td><input type="text" placeholder="Email"></td>
+          <td class="contact-label-cell"><label class="contact-label" for="contact-email">Email</label></td>
+          <td><input id="contact-email" type="email" name="email" placeholder="Email" autocomplete="email" required></td>
         </tr>
         <tr>
-          <td class="contact-label">Questions</td>
-          <td><textarea placeholder="Questions"></textarea></td>
+          <td class="contact-label-cell"><label class="contact-label" for="contact-message">Questions</label></td>
+          <td><textarea id="contact-message" name="message" placeholder="Questions" required></textarea></td>
         </tr>
         <tr class="noline">
-          <td colspan="2"><input type="submit" value="Send Message" class="contact-submit"></td>
+          <td colspan="2">
+            <button type="submit" class="contact-submit">Send Message</button>
+            <p id="contact-status" class="contact-status" role="status" aria-live="polite"></p>
+          </td>
         </tr>
       </table>
     </form>
